@@ -1,2 +1,123 @@
-# mnist-digit-recognition-sequential-api
-A deep learning model trained on the MNIST dataset using Keras Sequential API with extensive data augmentation, achieving high accuracy and strong generalization across digit classes.
+# MNIST Handwritten Digit Classification using Keras Sequential API
+
+This project builds and trains a deep learning model using the **Keras Sequential API** to classify handwritten digits (0–9) from the **MNIST dataset**.  
+Along with building a neural network, the project performs **extensive data augmentation**, visualization, evaluation, and model analysis to understand model behavior deeply.
+
+---
+
+## Project Overview
+
+- Loaded MNIST dataset using TensorFlow/Keras  
+- Normalized image pixel values  
+- Performed **seven powerful data augmentations** to increase dataset variability  
+- Built a deep neural network using **Dense layers + Batch Normalization**  
+- Trained for 30 epochs with validation monitoring  
+- Evaluated performance using multiple metrics  
+- Visualized model confidence, ROC curves, PR curves, and misclassifications  
+- Saved the final trained model using Joblib  
+
+---
+
+## Dataset  
+- **Dataset:** MNIST (70,000 grayscale 28×28 handwritten digit images)  
+- **Classes:** 10 (Digits 0–9)  
+- **Train/Test Split:** 80% Training, 20% Testing  
+- All pixel values were scaled to the range **0–1**
+
+---
+
+## Exploratory Data Analysis
+
+The following plots were generated:
+
+- 🔹 Single and grid visualization of handwritten digits  
+- 🔹 Training sample distribution  
+- 🔹 Test sample distribution  
+
+These helped in understanding the dataset before training the model.
+
+---
+
+## Data Augmentation Techniques
+
+Seven augmentations were applied to improve model generalization:
+
+1. **Shift Left (2 px)**  
+2. **Shift Right (2 px)**  
+3. **Shift Up (2 px)**  
+4. **Shift Down (2 px)**  
+5. **Zoom In**
+6. **Zoom Out**
+7. **Original Images**
+
+The augmented training dataset size became **7× larger**, giving the model robust exposure to real-world handwriting variations.
+
+---
+
+## Model Architecture (Keras Sequential)
+
+The neural network consists of:
+
+- Input layer: 784 neurons  
+- Dense(300) + BatchNorm  
+- Dense(200) + BatchNorm  
+- Dense(100) + BatchNorm  
+- Dense(50) + BatchNorm  
+- Output: Dense(10, softmax)
+
+This architecture combines **depth + normalization**, enabling stable and high-accuracy learning.
+
+---
+
+## Training History
+
+Plotted:
+
+- Training loss vs. validation loss  
+- Training accuracy vs. validation accuracy  
+
+These curves helped detect overfitting or underfitting patterns.
+
+---
+
+## Model Evaluation Metrics
+
+Fill in the final values after running your model:
+
+| Metric                   | Value      |
+|--------------------------|------------|
+| **Test Accuracy**        | *add here* |
+| **Precision (Weighted)** | *add here* |
+| **Recall (Weighted)**    | *add here* |
+| **F1 Score (Weighted)**  | *add here* |
+| **ROC-AUC Score (OvR)**  | *add here* |
+| **Log Loss**             | *add here* |
+| **Cohen’s Kappa Score**  | *add here* |
+| **Matthews Corr.Coeff.** | *add here* |
+| **Top-3 Accuracy**       | *add here* |
+
+---
+
+## Visualizations Produced
+
+- Confusion Matrix  
+- Per-Class Accuracy  
+- ROC Curve (per digit)  
+- Precision-Recall Curve (per digit)  
+- Calibration curves for all 10 classes  
+- Histogram of prediction confidence  
+- First 25 correctly classified samples (>= 90% confidence)  
+- First 25 misclassified samples  
+
+These visualizations provide deep insight into both strengths and weaknesses of the model.
+
+---
+
+## Saving the Model
+
+The final trained Keras model is saved using Joblib:
+
+```python
+import joblib
+joblib.dump(model, 'Sequential_Perceptron_model.pkl')
+

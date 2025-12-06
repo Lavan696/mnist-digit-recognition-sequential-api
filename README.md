@@ -113,11 +113,29 @@ These visualizations provide deep insight into both strengths and weaknesses of 
 
 ---
 
+## Tech Stack
+
+- **Programming Language:** Python  
+- **Deep Learning Framework:** TensorFlow / Keras (Sequential API)  
+- **Data Manipulation:** NumPy, Pandas  
+- **Visualization:** Matplotlib, Seaborn  
+- **Model Persistence:** Joblib  
+- **Utilities:** SciPy (for zoom-based augmentation)
+- **Scikit-learn** (metrics, preprocessing, splitting)
+
 ## Saving the Model
 
 The final trained Keras model is saved using Joblib:
 
-```python
+`python
 import joblib
-joblib.dump(model, 'Sequential_Perceptron_model.pkl')
+joblib.dump(model, 'Sequential_Perceptron_model.pkl')`
+
+---
+## Author  
+
+**Lavan Kumar Konda**  
+-  2nd Year Student at NIT Andhra Pradesh  
+-  Passionate about Data Science, Machine Learning, and AI  
+-  [LinkedIn](https://www.linkedin.com/in/lavan-kumar-konda/)
 

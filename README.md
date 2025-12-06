@@ -84,17 +84,17 @@ These curves helped detect overfitting or underfitting patterns.
 
 Fill in the final values after running your model:
 
-| Metric                   | Value      |
-|--------------------------|------------|
-| **Test Accuracy**        | *add here* |
-| **Precision (Weighted)** | *add here* |
-| **Recall (Weighted)**    | *add here* |
-| **F1 Score (Weighted)**  | *add here* |
-| **ROC-AUC Score (OvR)**  | *add here* |
-| **Log Loss**             | *add here* |
-| **Cohen’s Kappa Score**  | *add here* |
-| **Matthews Corr.Coeff.** | *add here* |
-| **Top-3 Accuracy**       | *add here* |
+| Metric                   | Value    |
+|--------------------------|----------|
+| **Test Accuracy**        | *98.84%*  |
+| **Precision (Weighted)** | *98.84** |
+| **Recall (Weighted)**    | *98.84** |
+| **F1 Score (Weighted)**  | *98.84** |
+| **ROC-AUC Score (OvR)**  | *0.9996* |
+| **Log Loss**             | *0.085*  |
+| **Cohen’s Kappa Score**  | *98.71*  |
+| **Matthews Corr.Coeff.** | *98.71*  |
+| **Top-3 Accuracy**       | *99.88%*  |
 
 ---
 

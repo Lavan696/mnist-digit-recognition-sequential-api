@@ -30,9 +30,9 @@ Along with building a neural network, the project performs **extensive data augm
 
 The following plots were generated:
 
-🔹 Single and grid visualization of handwritten digits  
-🔹 Training sample distribution  
-🔹 Test sample distribution  
+- Single and grid visualization of handwritten digits  
+- Training sample distribution  
+- Test sample distribution  
 
 These helped in understanding the dataset before training the model.
 

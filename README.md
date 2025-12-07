@@ -86,7 +86,7 @@ Fill in the final values after running your model:
 
 | Metric                   | Value    |
 |--------------------------|----------|
-| **Test Accuracy**        | *98.84%*  |
+| **Test Accuracy**        | *98.84%* |
 | **Precision (Weighted)** | *98.84** |
 | **Recall (Weighted)**    | *98.84** |
 | **F1 Score (Weighted)**  | *98.84** |
@@ -94,7 +94,7 @@ Fill in the final values after running your model:
 | **Log Loss**             | *0.085*  |
 | **Cohen’s Kappa Score**  | *98.71*  |
 | **Matthews Corr.Coeff.** | *98.71*  |
-| **Top-3 Accuracy**       | *99.88%*  |
+| **Top-3 Accuracy**       | *99.88%* |
 
 ---
 

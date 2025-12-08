@@ -82,8 +82,6 @@ These curves helped detect overfitting or underfitting patterns.
 
 ## Model Evaluation Metrics
 
-Fill in the final values after running your model:
-
 | Metric                   | Value    |
 |--------------------------|----------|
 | **Test Accuracy**        | *98.84%* |
